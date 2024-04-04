@@ -1,6 +1,6 @@
 import React from 'react';
-import { LocaleProvider } from 'antd';
-import zhCN from 'antd/lib/locale-provider/zh_CN';
+import { ConfigProvider } from 'antd';
+import zhCN from 'antd/es/locale/zh_CN';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
 import "antd/dist/antd.css";
@@ -23,11 +23,11 @@ function routerBeforeEnterHook(path: string) {
 
 function App() {
   return (
-    <LocaleProvider locale={zhCN}>
+    <ConfigProvider locale={zhCN}>
       <div className="App">
         <RouterView beforeEnter={routerBeforeEnterHook} />
       </div>
-    </LocaleProvider>
+    </ConfigProvider>
   );
 }
 
