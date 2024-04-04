@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { withRouter, Link } from 'react-router-dom';
-import { Icon, Affix } from 'antd';
+import { Icon, Affix, SearchOutlined } from 'antd';
 import { getHotShowing, getContentBySearch } from "../api";
 import * as _ from "lodash";
 import { serialize } from '../utils';
