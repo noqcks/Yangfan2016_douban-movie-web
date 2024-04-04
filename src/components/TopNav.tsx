@@ -101,7 +101,7 @@ function TopNav(props: iTopNavProps) {
           <div className="search">
             <div className="search-box">
               <div className="search-btn" onClick={navToSearch}>
-                <Icon type="search" />
+                <Icon><SearchOutlined /></Icon>
                 <span>全网搜</span>
               </div>
               <input className="search-input"
